@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&family=Open+Sans:wght@700&family=Ubuntu:wght@500&display=swap');
+
+.side-img-mobile {
+    display: none;
+}
+
+.comp-1 {
+    display: block;
+}
+
+.comp-2 {
+    display: none;
+}
+
+.comp-3 {
+    display: none;
+}
+
+.comp-4 {
+    display: none;
+}
+
+.thank-cont {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thank-img {
+    margin-bottom: 150px;
+}
+
+.thank-title {
+    color: var(--dark-blue);
+    position: absolute;
+    margin-top: 15px;
+}
+
+.thank-desc {
+    position: absolute;
+    margin-top: 150px;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    line-height: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: hsl(212, 81%, 92%);
+}
+
+:root {
+    --dark-blue: hsl(213, 96%, 18%);
+    --used-purple: hsl(243, 100%, 62%);
+    --semi-white: hsl(247, 53%, 97%);
+}
+
+/*-----------------------------------------------------*/
+
+.comp-title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: var(--dark-blue);
+}
+
+.comp-desc {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: grey;
+}
+
+.container {
+    width: 60%;
+    height: 80%;
+    box-shadow: black 0px 60px 149px -138px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.side-img {
+    height: 94%;
+    margin-left: 15px;
+}
+
+.steps {
+    position: absolute;
+    top: 10%;
+    left: 40px;
+    list-style-type: none;
+}
+
+.steps * div {
+    width: 35px;
+    height: 35px;
+    border: 1px white solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.steps * span {
+    position: absolute;
+    left: 150%;
+    white-space: nowrap;
+    color: white;
+    font-size: 11px;
+    opacity: .5;
+}
+
+.steps * p {
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    white-space: nowrap;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.steps li {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.active {
+    background-color: hsl(212, 81%, 92%);
+    border-radius: 50%;
+}
+
+.active div {
+    color: var(--dark-blue);
+    border: none;
+}
+
+/*-----------------------------------------------------*/
+
+.next-btn {
+    border-radius: 7px;
+    border: none;
+    width: 110px;
+    height: 43px;
+    color: white;
+    background-color: hsl(213, 48%, 35%);
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+.back-btn {
+    border: none;
+    width: 110px;
+    height: 43px;
+    color: var(--dark-blue);
+    background-color: transparent;
+    position: absolute;
+    left: 40%;
+    bottom: 5%;
+    cursor: pointer;
+    font-weight: 900;
+    display: none;
+}
+
+.confirm-btn {
+    border-radius: 7px;
+    border: none;
+    width: 110px;
+    height: 43px;
+    color: white;
+    font-size: 16px;
+    background-color: var(--used-purple);
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    cursor: pointer;
+    display: none;
+}
+
+/*-----------------------------------------------------*/
+
+.comps-cont{
+    position: relative;
+    top: -7%;
+    margin: 0px auto;
+    width: 65%;
+    height: 80%;
+}
+
+.comps-cont .comp-1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.comp-1 form {
+    width: 90%;
+    height: 70%;
+    position: relative;
+    left: 10%;
+    top: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.comp-1 form input {
+    width: 91%;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px rgba(128, 128, 128, 0.614) solid;
+    outline: none;
+    padding-left: 15px;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.comp-1 form input:focus {
+    border: 1px var(--used-purple) solid;
+}
+
+.name-header {
+    color: var(--dark-blue);
+    position: relative;
+    top:5%;
+    font-size: 13px;
+}
+
+.email-header{
+    color: var(--dark-blue);
+    position: relative;
+    top: 5%;
+    font-size: 13px;
+}
+
+.phone-header {
+    color: var(--dark-blue);
+    position: relative;
+    top: 5%;
+    font-size: 13px;
+}
+
+.error {
+    position: absolute;
+    top: 12%;
+    right: 10%;
+    color: hsl(354, 84%, 57%);
+    font-size: 12px;
+    font-weight: 800;
+    display: none;
+}
+
+.error2 {
+    position: absolute;
+    top: 43%;
+    right: 10%;
+    color: hsl(354, 84%, 57%);
+    font-size: 12px;
+    font-weight: 800;
+    display: none;
+}
+
+.error3 {
+    position: absolute;
+    top: 74%;
+    right: 10%;
+    color: hsl(354, 84%, 57%);
+    font-size: 12px;
+    font-weight: 800;
+    display: none;
+}
+
+/*-----------------------------------------------------*/
+
+.comp-2-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 150px;
+    margin-top: 130px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.comp-2-cards > div {
+    width: 125px;
+    height: 100%;
+    border: 1px rgba(128, 128, 128, 0.614) solid;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.offer {
+    font-size: 13px;
+    color: var(--dark-blue);
+    width: 100%;
+    position: absolute;
+    left: 10%;
+    bottom: 10px;
+    display: none;
+}
+
+.comp-2-cards > div:hover {
+    border: 1px var(--used-purple) solid;
+}
+
+.icon {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.title {
+    color: var(--dark-blue);
+    font-weight: 700;
+    position: absolute;
+    left: 10%;
+    top: 95px;
+}
+
+.info {
+    color: grey;
+    font-size: 13px;
+    position: absolute;
+    left: 10%;
+    top: 120px;
+}
+
+.active-plan { 
+    background-color: var(--semi-white);;
+}
+
+/*-----------------------------------------------------*/
+
+.method {
+    width: 80%;
+    height: 40px;
+    background-color: var(--semi-white);;
+    border-radius: 5px;
+    margin: 35px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.month {
+    position: absolute;
+    left: 30%;
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.year {
+    position: absolute;
+    right: 30%;
+    font-weight: 700;
+    color: grey;
+    font-size: 13px;
+}
+
+.switch {
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+    background-color: var(--dark-blue);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0px 2px;
+}
+
+.switch .value {
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/*-----------------------------------------------------*/
+
+.ch-cont {
+    width: 91%;
+    height: 60%;
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ch-cont > div {
+    width: 80%;
+    height: 70px;
+    border: 1px rgba(128, 128, 128, 0.614) solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ch-cont > div:hover {
+    border: 1px var(--used-purple) solid;
+}
+
+.ch-cont div input {
+    width: 17px;
+    height: 17px;
+    margin-left: 20px;
+    accent-color: var(--used-purple);
+}
+
+.ch-title {
+    font-size: 13px;
+    color: var(--dark-blue);
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.ch-desc {
+    font-size: 13px;
+    color: grey;
+    margin-top: 25px;
+    margin-left: -90px;
+}
+
+.ch-3-desc {
+    font-size: 13px;
+    color: grey;
+    margin-top: 25px;
+    margin-left: -128px;
+}
+
+.ch-cont > div label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.ch-price {
+    position: absolute;
+    right: 5%;
+    font-size: 13px;
+    color: var(--used-purple);
+}
+
+.active-add-on { 
+    background-color: hsl(247, 53%, 97%);
+}
+
+/*-----------------------------------------------------*/
+
+.summary-cont {
+    width: 70%;
+    height: 150px;
+    position: relative;
+    transform: translate(50px, 130px);
+    background-color: var(--semi-white);
+    border-radius: 10px;
+    padding: 0px 20px;
+    overflow: hidden;
+}
+
+.ph-plan {
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 13px;
+    position: absolute;
+    top: 10%;
+}
+
+.change {
+    position: absolute;
+    top: 22%;
+    font-size: 13px;
+    color: var(--used-purple);
+    cursor: pointer;
+}
+
+.change:hover {
+    text-decoration: underline;
+}
+
+.ph-price {
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 13px;
+    position: absolute;
+    right: 20px;
+    top: 16%;
+}
+
+hr {
+    transform: translate(0%, 70px);
+}
+
+.ph-add-ons-cont {
+    width: 100%;
+    height: 70px;
+    justify-self: center;
+    transform: translate(0%, 73px);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ph-addon-cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ph-addon {
+    font-size: 13px;
+    color: grey;
+}
+
+.ph-addon-price {
+    color: var(--dark-blue);
+    font-size: 13px;
+}
+
+.total {
+    width: 60%;
+    position: absolute;
+    top: 73%;
+    left: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    font-size: 13px;
+    color: grey;
+}
+
+.total-price {
+    font-weight: 700;
+    color: var(--used-purple);
+    font-size: 20px;
+}
+
+/*-----------------------------------------------------*/
+
+@media (max-width:800px) {
+    .container {
+        overflow: hidden;
+    }
+
+    .side-img {
+        display: none;
+    }
+
+    .side-img-mobile {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .steps li p, .steps li span {
+        display: none;
+    }
+
+    .steps {
+        display: flex;
+        flex-direction: row;
+        left: auto;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .comps-cont {
+        width: 100%;
+        height: 60%;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    .comp-1 {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+    }
+
+    .comp-2 { 
+        position: absolute;
+        top: 8%;
+        width: 100%;
+    }
+
+    .comp-2-cards {
+        padding-right: 5px;
+        height: 100%;
+    }
+
+    .comp-2-cards div {
+        width: 100%;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+
+    .comp-2-cards div .title {
+        position: absolute;
+        top: 15%;
+        left: 30%;
+    }
+
+    .comp-2-cards div .info {
+        top: 50%;
+        left: 30%;
+    }
+
+    .comp-2-cards div .icon {
+        top: 20%;
+    }
+
+    .comp-2-cards div .offer {
+        top: 75%;
+        left: 30%;
+    }
+
+    .method {
+        position: fixed;
+        left: 50%;
+        top: 79%;
+        transform: translate(-50%,0%);
+    }
+
+    .next-btn {
+        bottom: 2%;
+    }
+
+    .back-btn {
+        bottom: 2%;
+        left: 5%;
+    }
+
+    .year {
+        right: 20%;
+    }
+
+    .month {
+        left: 20%;
+    }
+
+    .comp-3 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 10%;
+    }
+
+    .ch-cont {
+        width: 100%;
+        transform: translate(25px,25px);
+    }
+
+    .confirm-btn {
+        bottom: 2%;
+    }
+
+    .comp-4 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 10%;
+    }
+
+    .summary-cont {
+        transform: translate(13%,130px);
+    }
+
+    .total {
+        width: 90%;
+        left: 5%;
+        top: 75%;
+    }
+
+    .thank-desc {
+        margin-top: 250px;
+    }
+}

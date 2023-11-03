@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link cont>
+</head>
+<body>
+
+    <div class="container">
+        <img src="/images/bg-sidebar-desktop.svg" alt="SideBar" class="side-img">
+        <img src="/images/bg-sidebar-mobile.svg" alt="SideBar" class="side-img-mobile">
+
+        <div class="comps-cont">
+            <!--Component 1-->
+            <div class="comp-1 component" step-1>
+                <h1 class="comp-title">Personal info</h1>
+                <p class="comp-desc">Please provide your name, email address and phone number.</p>
+                <form action="#">
+                    <span class="name-header">Name</span>
+                    <span class="error">This Field Is Required</span>
+                    <input type="text" id="user-name" placeholder="e.g. Stephen King">
+
+                    <span class="email-header">Email Address</span>
+                    <span class="error2">This Field Is Required</span>
+                    <input type="email" id="email" placeholder="e.g. stephenking@lorem.com">
+
+                    <span class="phone-header">Phone Number</span>
+                    <span class="error3">This Field Is Required</span>
+                    <input type="text" id="phone-number" placeholder="e.g. +1 234 567 890">
+                </form>
+            </div>
+
+
+            <!--Component 2-->
+            <div class="comp-2 component" step-2>
+                <h1 class="comp-title">Select your plan</h1>
+                <p class="comp-desc">You have the option of monthly or yearly billing.</p>
+                <div class="comp-2-cards">
+                    <div style="border-color: hsl(243, 100%, 62%);" class="arcade plan active-plan">
+                        <img src="/images/icon-arcade.svg" alt="Arcade Icon" class="arcade-icon icon">
+                        <div class="title">Arcade</div>
+                        <div class="info">$<span class="price-num">9</span>/mo</div>
+                        <div class="offer">2 months free</div>
+                    </div>
+
+                    <div class="advanced plan">
+                        <img src="/images/icon-advanced.svg" alt="" class="advanced-icon icon">
+                        <div class="title">Advanced</div>
+                        <div class="info">$<span class="price-num">12</span>/mo</div>
+                        <div class="offer">2 months free</div>
+                    </div>
+
+                    <div class="pro plan">
+                        <img src="/images/icon-pro.svg" alt="" class="pro-icon icon">
+                        <div class="title">Pro</div>
+                        <div class="info">$<span class="price-num">15</span>/mo</div>
+                        <div class="offer">2 months free</div>
+                    </div>
+                </div>
+
+                <div class="method">
+                    <div class="month">Monthly</div>
+                    <div class="switch">
+                        <div class="value"></div>
+                    </div>
+                    <div class="year">Yearly</div>
+                </div>
+            </div>
+
+
+            <!--Component 3-->
+            <div class="comp-3 component" step-3>
+                <h1 class="comp-title">Pick add-ons</h1>
+                <p class="comp-desc">Add-ons help enhance your gaming experience.</p>
+
+                <div class="ch-cont">
+
+                    <div class="ch-1 ch">
+                        <label for="ch-1" class="addon"></label>
+                        <input type="checkbox" id="ch-1">
+                        <div class="ch-title">Online service</div>
+                        <div class="ch-desc">Access to multiplayer games</div>
+                        <div class="ch-price">+$<span class="price-num-addon">1</span>/mo</div>
+                    </div>
+                    
+                    
+                    <div class="ch-2 ch">
+                        <label for="ch-2" class="addon"></label>
+                        <input type="checkbox" id="ch-2">
+                        <div class="ch-title">Larger storage</div>
+                        <div class="ch-desc">Extra 1TB of cloud save</div>
+                        <div class="ch-price">+$<span class="price-num-addon">2</span>/mo</div>
+                    </div>
+                    
+                    
+                    <div class="ch-3 ch">
+                        <label for="ch-3" class="addon"></label>
+                        <input type="checkbox" id="ch-3">
+                        <div class="ch-title">Customizable profile</div>
+                        <div class="ch-3-desc">Custom theme on your profile</div>
+                        <div class="ch-price">+$<span class="price-num-addon">2</span>/mo</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Component 4-->
+            <div class="comp-4 component" step-4>
+                <h1 class="comp-title">Finishing up</h1>
+                <p class="comp-desc">Double-check everything looks OK before confirming.</p>
+
+                <div class="summary-cont">
+                    <div class="ph-plan">Arcade (<span>Monthly</span>)</div>
+                    <div class="change">Change</div>
+                    <div class="ph-price">$9/mo</div>
+                    <hr>
+                    <div class="ph-add-ons-cont">
+                        <!-- <div class="ph-addon-cont">
+                            <div class="ph-addon">Online service</div>
+                            <div class="ph-addon-price">+$1/mo</div>
+                        </div>
+                        <div class="ph-addon-cont">
+                            <div class="ph-addon">Larger storage</div>
+                            <div class="ph-addon-price">+$2/mo</div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="total">
+                    <div class="total-text">Total (per month)</div>
+                    <div class="total-price">+$12/mo</div>
+                </div>
+            </div>
+
+            <div class="thank-cont">
+                <img src="/images/icon-thank-you.svg" alt="Thank" class="thank-img">
+                <h1 class="thank-title">Thank you!</h1>
+                <p class="thank-desc">
+                    Thanks for confirming your subscribtion!
+                    We hope you have fun using our platform.
+                    If you ever need support, please feel free to email us at support@loremgaming.com.
+                </p>
+            </div>
+
+        </div>
+
+        <ul class="steps">
+
+            <li class="step-1 active step">
+                <span>STEP 1</span>
+                <div>1</div>
+                <p>your info</p>
+            </li>
+
+            <li class="step-2 step">
+                <span>STEP 2</span>
+                <div>2</div>
+                <p>select plan</p>
+            </li>
+
+            <li class="step-3 step">
+                <span>STEP 3</span>
+                <div>3</div>
+                <p>add-ons</p>
+            </li>
+
+            <li class="step-4 step">
+                <span>STEP 4</span>
+                <div>4</div>
+                <p>summary</p>
+            </li>
+
+        </ul>
+
+        <button class="next-btn">Next Step</button>
+        <button class="back-btn"> Go Back</button>
+        <button class="confirm-btn">Confirm</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
